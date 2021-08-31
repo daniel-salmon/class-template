@@ -1,0 +1,9 @@
+#!/bin/bash
+
+name=${1:-"hw"}
+
+mkdir -p "${name}/src/figures"
+
+cp Makefile Dockerfile run ${name}
+
+cp hw-template.tex "${name}/src/hw.tex"

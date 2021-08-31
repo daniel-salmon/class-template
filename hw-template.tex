@@ -1,0 +1,130 @@
+\documentclass[manuscript,screen,nonacm]{acmart}
+
+%% The enumitem package let's us enumerate lists with, e.g. a b c, instead of numbers
+\usepackage{enumitem}
+
+%% The clrscode3e package provides pseudocode environments. It is the style pacakge used
+%% to generate the type for Introduction to Algorithms 3rd Edition
+%% by Cormen, Leiserson, Rivest and Stein
+\usepackage{clrscode3e}
+
+%% The hyperref package let's us include hyperlinks in our document
+\usepackage{hyperref}
+
+%% The physics package makes it easy to write bras and kets
+\usepackage{physics}
+
+%% Declare path to figures directory
+\graphicspath{{./figures/}}
+
+\theoremstyle{plain}
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{claim}{Claim}[section]
+\newtheorem{theorem}{Theorem}[section]
+
+\theoremstyle{remark}
+\newtheorem{case}{Case}
+\newtheorem{step}{Step}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+%% The card(inality) command puts mathematically acceptable vertical bars around the input
+\newcommand{\card}[1]{\lvert #1 \rvert}
+
+%% The dotprod command displays the dot product of two vectors
+\newcommand{\dotprod}[2]{#1 \cdot #2}
+
+%% The argmax and argmin commands typeset their name sake functions
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+% Define probability macro
+\renewcommand{\Pr}{\operatorname{\mathsf{P}}}
+
+% Define expected value macro.
+\newcommand{\E}{\operatorname{\mathsf{E}}}
+
+% Define set macro, i.e., {1,2,3}
+\newcommand{\Set}[1]{\{ #1 \}}
+
+% Define a math hyphen
+\mathchardef\mhyphen="2D
+
+%% Uncommon operations that I always forget
+
+%% Matrices
+%% \begin{equation}
+%% 	lhs = 
+%% 	\begin{pmatrix}
+%% 		(1,1) & (1,2)\\
+%% 		(2,1) & (2,2)
+%% 	\end{pmatrix}
+%% \end{equationW}
+
+%% Splits
+%% \begin{equation}
+%% \begin{split}
+%% 	lhs & = rhs\\
+%% 	&= rhs2\\
+%% 	&= rhs3\\
+%% \end{split}
+%% \end{equation}
+
+%% Cases
+%% \begin{equation}
+%% 	lhs =
+%% 	\begin{cases}
+%% 		case1 & \text{when this}\\
+%% 		case2 & \text{when this}\\
+%% 		case3 & \text{otherwise}
+%% 	\end{cases}
+%% \end{equation}
+
+%% Figures
+%% \begin{figure}[t]
+%% 	\centering
+%% 	\includegraphics[width=0.5\textwidth]{figure.jpg}
+%% 	\caption{
+%% 		This is a caption.
+%% 	}
+%% 	\label{fig:figure}
+%% \end{figure}
+
+\begin{document}
+
+\title{Homework $\cdot$ Date}
+\subtitle{Professor Ringeaux Brimbus $\cdot$ Class Number $\cdot$ Season}
+
+\author{Daniel Salmon}
+\email{daniel-salmon@pitt.edu}
+
+\begin{abstract}
+	This paper presents a solution to Homework y.  Section
+	\ref{sec:problems} restates the problem; Section \ref{sec:solution}
+	presents the solution. A summary of results.
+\end{abstract}
+
+\maketitle
+
+\section{Problems}
+\label{sec:problems}
+
+This is a problem.
+
+\subsection{Problem x (z points)}
+\label{subsec:problemx}
+
+This is a problem.
+
+\subsection{Problem y (z points)}
+\label{subsec:problemy}
+
+This is a problem.
+
+\section{Solution}
+\label{sec:solution}
+
+This is a solution.
+
+\end{document}
